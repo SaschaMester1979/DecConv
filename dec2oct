@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+	echo "Dieses Script rechnet Dezimalwerte in Oktalwerte um."
+	echo "Bitte den zu berechnenden Dezimalwert eingeben."
+	echo "Aufruf: dec2oct [Dezimalzahl]"
+else
+	echo "Die Dezimalzahl $1 als Oktalzahl lautet: "
+	string='obase=8;'$1
+	echo $string | bc
+fi
+
+

@@ -1,0 +1,6 @@
+3 kleine Bash-Scripte, die gegebene Dezimalzahlen in
+entweder Binär-, Oktal- oder Hexadezimalwerte umrechnen.
+
+Hinweis: 
+bc muss installiert sein. 
+

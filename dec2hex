@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+	echo "Dieses Script rechnet Dezimalwerte in Hexadezimalwerte um."
+	echo "Bitte den zu berechnenden Dezimalwert eingeben."
+	echo "Aufruf: dec2hex [Dezimalzahl]"
+else
+	echo "Die Dezimalzahl $1 als Hexadezimalzahl lautet: "
+	string='obase=16;'$1
+	echo $string | bc
+fi
+
+

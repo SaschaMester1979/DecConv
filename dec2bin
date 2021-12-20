@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+	echo "Dieses Script rechnet Dezimalwerte in Binärwerte um."
+	echo "Bitte den zu berechnenden Dezimalwert eingeben."
+	echo "Aufruf: dec2bin [Dezimalzahl]"
+else
+	echo "Die Dezimalzahl $1 als Binärzahl lautet: "
+	string='obase=2;'$1
+	echo $string | bc
+
+fi
